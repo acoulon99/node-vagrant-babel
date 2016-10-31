@@ -17,7 +17,7 @@ echo "Installing PM2 server manager..."
 sudo npm install pm2 -g
 
 echo "rsyncing synced folder to vagrant user directory..."
-rsync -a /vagrant/ /home/vagrant
+rsync -avh --include=".babelrc" --include=".gitignore" --exclude="node_modules" --exclude=".*" --exclude="dist" --delete /vagrant/ /home/vagrant
 
 echo "Installing dependencies..."
 npm install
