@@ -2,7 +2,7 @@
   "name": "node-babel-dev",
   "version": "0.1.0",
   "description": "Node server with Vagrant and Babel",
-  "main": "lib/index.js",
+  "main": "lib/server.js",
   "scripts": {
     "start": "pm2 start --interpreter babel-node lib/server.js",
     "restart": "pm2 restart all",
